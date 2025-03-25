@@ -11,10 +11,48 @@ Este projeto consiste em uma API RESTful para o gerenciamento de produtos da Nun
 * **CORS**: Middleware para habilitar o compartilhamento de recursos de origem cruzada.
 * **ESLint**: Linter para garantir a qualidade do código JavaScript.
 * **Nodemon**: Ferramenta para reiniciar automaticamente o servidor durante o desenvolvimento.
-* **Javascript**: Linguagem de programação usada no projeto.
-* **HTML**: Linguagem de marcação usada no projeto.
-* **CSS**: Linguagem de estilo usada no projeto.
+* **Javascript**: Linguagem de programação usada no projeto
+* **HTML**: Linguagem de marcação usada no projeto
+* **CSS**: Linguagem de estilo usada no projeto
 * **Json**: Usado para transferência de dados.
+
+## Funcionalidades
+
+A API oferece os seguintes endpoints para o gerenciamento de produtos:
+
+* `GET /produtos`: Lista todos os produtos.
+* `GET /produtos/:id`: Obtém um produto específico pelo ID.
+* `POST /produtos`: Cria um novo produto.
+* `PUT /produtos/:id`: Atualiza um produto existente pelo ID.
+* `DELETE /produtos/:id`: Deleta um produto pelo ID.
+
+## Instalação
+
+1.  Clone o repositório:
+
+    ```bash
+    git clone https://github.com/BrunoDornelas/Desafio-Everymind
+    ```
+
+2.  Navegue até o diretório do projeto:
+
+    ```bash
+    cd nunes-sports-api
+    ```
+
+3.  Instale as dependências:
+
+    ```bash
+    npm install
+    ```
+
+4.  Inicie o servidor:
+
+    ```bash
+    npm run dev
+    ```
+
+    * O servidor estará rodando em `http://localhost:3000`.
 
 ## Contribuição
 
