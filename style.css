@@ -1,0 +1,172 @@
+/* Estilos para o corpo da página */
+body {
+  /* Define a fonte padrão para a página */
+  font-family: "Times New Roman", Times, serif;
+
+  /* Define o tamanho da fonte padrão para a página */
+  font-size: 20px;
+
+  /* Remove as margens padrão do corpo da página */
+  margin: 0;
+
+  /* Adiciona um preenchimento de 20 pixels ao corpo da página */
+  padding: 20px;
+}
+
+/* Estilos para a tabela */
+table {
+  /* Define a largura da tabela para 100% da largura do contêiner pai */
+  width: 100%;
+
+  /* Define o modelo de borda da tabela para colapsar as bordas adjacentes */
+  border-collapse: collapse;
+}
+
+/* Estilos para as células de cabeçalho (th) e células de dados (td) da tabela */
+th,
+td {
+  /* Define a borda das células como uma linha sólida de 1 pixel com a cor #ddd (cinza claro) */
+  border: 1px solid #ddd;
+
+  /* Adiciona um preenchimento interno de 8 pixels às células */
+  padding: 8px;
+
+  /* Alinha o texto das células à esquerda */
+  text-align: left;
+}
+
+/* Estilos específicos para as células de cabeçalho (th) */
+th {
+  /* Define a cor de fundo das células de cabeçalho como #f2f2f2 (cinza claro) */
+  background-color: #f2f2f2;
+}
+
+/* Estilos para o formulário */
+form {
+  /* Define o modelo de layout do formulário como flexbox */
+  display: flex;
+
+  /* Define a direção principal do flexbox como coluna */
+  flex-direction: column;
+
+  /* Define a largura máxima do formulário como 400 pixels */
+  max-width: 400px;
+}
+
+/* Estilos para os rótulos (labels) do formulário */
+label {
+  /* Adiciona uma margem superior de 10 pixels aos rótulos */
+  margin-top: 10px;
+}
+
+/* Estilos para a área de texto (textarea) */
+textarea {
+  /* Define a borda da área de texto como uma linha sólida de 2 pixels */
+  border: 2px solid;
+}
+
+/* Estilos para os campos de entrada (input) e áreas de texto (textarea) */
+input,
+textarea {
+  /* Adiciona um preenchimento interno de 8 pixels aos campos de entrada e áreas de texto */
+  padding: 8px;
+
+  /* Adiciona uma margem inferior de 10 pixels aos campos de entrada e áreas de texto */
+  margin-bottom: 10px;
+
+  /* Define o raio da borda dos campos de entrada e áreas de texto como 10 pixels */
+  border-radius: 10px;
+}
+
+/* Estilos para o botão de editar */
+#editar-button {
+  /* Adiciona um preenchimento interno de 10 pixels ao botão */
+  padding: 10px;
+
+  /* Define a cor de fundo do botão como #4caf50 (verde) */
+  background-color: #4caf50;
+
+  /* Define a cor do texto do botão como branco */
+  color: white;
+
+  /* Remove a borda do botão */
+  border: none;
+
+  /* Define o cursor do mouse como um ponteiro ao passar sobre o botão */
+  cursor: pointer;
+
+  /* Adiciona uma margem superior de 10 pixels ao botão */
+  margin-top: 10px;
+
+  /* Adiciona uma margem inferior de 10 pixels ao botão */
+  margin-bottom: 10px;
+
+  /* Define o raio da borda do botão como 10 pixels */
+  border-radius: 10px;
+}
+
+/* Estilos para o botão de deletar */
+#deletar-button {
+  /* Adiciona um preenchimento interno de 10 pixels ao botão */
+  padding: 10px;
+
+  /* Define a cor de fundo do botão como vermelho */
+  background-color: red;
+
+  /* Define a cor do texto do botão como branco */
+  color: white;
+
+  /* Remove a borda do botão */
+  border: none;
+
+  /* Define o cursor do mouse como um ponteiro ao passar sobre o botão */
+  cursor: pointer;
+
+  /* Define o raio da borda do botão como 10 pixels */
+  border-radius: 10px;
+}
+
+/* Estilos para o botão de salvar */
+#salvar-button {
+  /* Adiciona um preenchimento interno de 10 pixels ao botão */
+  padding: 10px;
+
+  /* Define a cor de fundo do botão como #4caf50 (verde) */
+  background-color: #4caf50;
+
+  /* Define a cor do texto do botão como branco */
+  color: white;
+
+  /* Remove a borda do botão */
+  border: none;
+
+  /* Define o cursor do mouse como um ponteiro ao passar sobre o botão */
+  cursor: pointer;
+
+  /* Adiciona uma margem inferior de 10 pixels ao botão */
+  margin-bottom: 10px;
+
+  /* Define o raio da borda do botão como 10 pixels */
+  border-radius: 10px;
+}
+
+/* Estilos para o botão de cancelar */
+#cancelar-button {
+  /* Adiciona um preenchimento interno de 10 pixels ao botão */
+  padding: 10px;
+
+  /* Define a cor de fundo do botão como vermelho */
+  background-color: red;
+
+  /* Define a cor do texto do botão como branco */
+  color: white;
+
+  /* Remove a borda do botão */
+  border: none;
+
+  /* Define o cursor do mouse como um ponteiro ao passar sobre o botão */
+  cursor: pointer;
+
+  /* Define o raio da borda do botão como 10 pixels */
+  border-radius: 10px;
+}

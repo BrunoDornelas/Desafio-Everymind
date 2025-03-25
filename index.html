@@ -1,0 +1,118 @@
+<!-- Define o tipo de documento como HTML5. -->
+<!DOCTYPE html>
+
+<!-- Inicia o documento HTML e define o idioma como português do Brasil. -->
+<html lang="pt-BR">
+  <!-- Início da seção de cabeçalho do documento. -->
+  <head>
+    <!-- Define o conjunto de caracteres para UTF-8, que suporta caracteres especiais, como acentos. -->
+    <meta charset="UTF-8" />
+
+    <!-- Torna o site responsivo, ajustando a largura da página para a largura do dispositivo e com o zoom inicial em 1.0. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Define o título da página, que aparece na aba do navegador. -->
+    <title>Desafio Everymind</title>
+
+    <!-- Conecta um arquivo CSS externo para estilizar a página. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Início da seção do corpo da página, onde o conteúdo visível ao usuário é colocado. -->
+  <body>
+    <!-- Início do cabeçalho, geralmente contém o título ou logo do site. -->
+    <header>
+      <!-- Exibe o título principal da página. -->
+      <h1>Produtos Nunes Sports</h1>
+    </header>
+
+    <!-- Início do conteúdo principal da página. -->
+    <main>
+      <!-- Início da primeira seção de conteúdo (Lista de Produtos). -->
+      <section>
+        <!-- Título da seção, indicando que esta parte é sobre a lista de produtos. -->
+        <h2>Lista de Produtos</h2>
+
+        <!-- Cria uma tabela com o ID "tabela-produtos" para exibir a lista de produtos. -->
+        <table id="tabela-produtos">
+          <!-- Define o cabeçalho da tabela, onde as colunas são especificadas. -->
+          <thead>
+            <!-- Define uma linha de tabela. -->
+            <tr>
+              <!-- Define a célula de cabeçalho da primeira coluna (Nome do produto). -->
+              <th>Nome</th>
+
+              <!-- Define a célula de cabeçalho da segunda coluna (Código do produto). -->
+              <th>Código</th>
+
+              <!-- Define a célula de cabeçalho da terceira coluna (Descrição do produto). -->
+              <th>Descrição</th>
+
+              <!-- Define a célula de cabeçalho da quarta coluna (Preço do produto). -->
+              <th>Preço</th>
+
+              <!-- Define a célula de cabeçalho da quinta coluna (Ações disponíveis, como editar ou excluir). -->
+              <th>Ações</th>
+            </tr>
+          </thead>
+
+          <!-- O corpo da tabela está vazio inicialmente, mas pode ser preenchido dinamicamente via JavaScript. -->
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- Início da segunda seção de conteúdo (Adicionar/Editar Produto). -->
+      <section>
+        <!-- Título da seção, indicando que esta parte é para adicionar ou editar um produto. -->
+        <h2>Adicionar/Editar Produto</h2>
+
+        <!-- Formulário para adicionar ou editar um produto. O ID "form-produto" é usado para referenciar o formulário no JavaScript. -->
+        <form id="form-produto">
+          <!-- Campo oculto para armazenar o ID do produto (para edição). Não é visível ao usuário. -->
+          <input type="hidden" id="id" />
+
+          <!-- Rótulo (label) para o campo de nome do produto. O atributo "for" associa o rótulo ao campo de entrada. -->
+          <label for="nome_produto">Nome:</label>
+          <!-- Campo de entrada de texto para o nome do produto, com o atributo "required", que exige preenchimento. -->
+          <input type="text" id="nome_produto" name="nome_produto" required />
+
+          <!-- Rótulo para o campo de código do produto. -->
+          <label for="codigo_produto">Código:</label>
+          <!-- Campo de entrada de texto para o código do produto, também exigido. -->
+          <input
+            type="text"
+            id="codigo_produto"
+            name="codigo_produto"
+            required
+          />
+
+          <!-- Rótulo para o campo de descrição do produto. -->
+          <label for="descricao_produto">Descrição:</label>
+          <!-- Área de texto para a descrição do produto, que pode ser deixada em branco. -->
+          <textarea id="descricao_produto" name="descricao_produto"></textarea>
+
+          <!-- Rótulo para o campo de preço do produto. -->
+          <label for="preco_produto">Preço:</label>
+          <!-- Campo de entrada para o preço do produto. Permite valores numéricos com precisão de 0.01 e exige um valor mínimo de 0.01. -->
+          <input
+            type="number"
+            step="0.01"
+            min="0.01"
+            id="preco_produto"
+            name="preco_produto"
+            required
+          />
+
+          <!-- Botão para salvar o produto, que envia o formulário. -->
+          <button id="salvar-button" type="submit">Salvar</button>
+
+          <!-- Botão para cancelar a ação, sem enviar o formulário. -->
+          <button id="cancelar-button" type="button">Cancelar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Conecta um arquivo JavaScript que será responsável pelas funcionalidades dinâmicas da página (por exemplo, manipulação de formulários). -->
+    <script src="script.js"></script>
+  </body>
+</html>
