@@ -45,7 +45,7 @@ A API oferece os seguintes endpoints para o gerenciamento de produtos:
     ```bash
     npm install
     ```
-4. Crie uma pasta dentro de src com o nome database e um arquivo dentro dessa pasta de nome database.js com o código abaixo:
+4.  Crie uma pasta dentro de src com o nome database e um arquivo dentro dessa pasta de nome database.js com o código abaixo:
 
 ```javascript
 const mysql = require('mysql2/promise');
@@ -71,6 +71,8 @@ module.exports = pool
 
     * O servidor estará rodando em `http://localhost:3000`.
 
+6.  Abra o arquivo index.html (usando a extenção Live Server do VScode, por exemplo)
+   
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
