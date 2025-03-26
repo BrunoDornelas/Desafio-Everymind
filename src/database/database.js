@@ -1,24 +1,19 @@
 // Importa o módulo mysql2/promise, que é usado para conectar ao banco de dados MySQL usando promises.
 const mysql = require("mysql2/promise");
 
-console.log("host_db", process.env.host_db);
-console.log("user_db", process.env.user_db);
-console.log("password_db", process.env.password_db);
-console.log("database_db", process.env.database_db);
-
 // Cria um pool de conexões com o banco de dados MySQL.
 const pool = mysql.createPool({
   // Define o host do banco de dados.
-  host: process.env.host_db,
+  host: "localhost",
 
   // Define o nome de usuário para conectar ao banco de dados.
-  user: process.env.user_db,
+  user: "root",
 
   // Define a senha para conectar ao banco de dados.
-  password: process.env.password_db,
+  password: "#Dornelas22",
 
   // Define o nome do banco de dados a ser usado.
-  database: process.env.database_db,
+  database: "nunes_sports",
 
   // Define se o pool deve esperar por conexões disponíveis se todas as conexões estiverem em uso.
   waitForConnections: true,

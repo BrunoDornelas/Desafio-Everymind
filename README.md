@@ -26,6 +26,51 @@ A API oferece os seguintes endpoints para o gerenciamento de produtos:
 * `PUT /produtos/:id`: Atualiza um produto existente pelo ID.
 * `DELETE /produtos/:id`: Deleta um produto pelo ID.
 
+## Instalação
+
+1.  Clone o repositório:
+
+    ```bash
+    git clone https://github.com/BrunoDornelas/Desafio-Everymind
+    ```
+
+2.  Navegue até o diretório do projeto:
+
+    ```bash
+    cd nunes-sports-api
+    ```
+
+3.  Instale as dependências:
+
+    ```bash
+    npm install
+    ```
+4. Crie uma pasta dentro de src com o nome database e um arquivo dentro dessa pasta de nome database.js com o código abaixo:
+
+```javascript
+const mysql = require('mysql2/promise');
+
+const pool = mysql.createPool({
+    host: 'localhost', // Substitua pelo endereço do seu banco de dados
+    user: 'seu_usuario', // Substitua pelo seu nome de usuário
+    password: 'sua_senha', // Substitua pela sua senha
+    database: 'nunes_sports',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
+
+module.exports = pool 
+```
+
+5.  Inicie o servidor:
+
+    ```bash
+    npm run dev
+    ```
+
+    * O servidor estará rodando em `http://localhost:3000`.
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
