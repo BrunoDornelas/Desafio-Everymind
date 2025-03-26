@@ -26,34 +26,6 @@ A API oferece os seguintes endpoints para o gerenciamento de produtos:
 * `PUT /produtos/:id`: Atualiza um produto existente pelo ID.
 * `DELETE /produtos/:id`: Deleta um produto pelo ID.
 
-## Instalação
-
-1.  Clone o repositório:
-
-    ```bash
-    git clone https://github.com/BrunoDornelas/Desafio-Everymind
-    ```
-
-2.  Navegue até o diretório do projeto:
-
-    ```bash
-    cd nunes-sports-api
-    ```
-
-3.  Instale as dependências:
-
-    ```bash
-    npm install
-    ```
-
-4.  Inicie o servidor:
-
-    ```bash
-    npm run dev
-    ```
-
-    * O servidor estará rodando em `http://localhost:3000`.
-
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
