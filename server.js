@@ -20,7 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 // Usa o roteador de produtos para definir as rotas da API de produtos.
-app.use("/produtos", produtosRoutes);
+app.use("/api/produtos", produtosRoutes);
 
 // Usa o middleware de tratamento de erros para lidar com erros não tratados nas rotas.
 app.use(errorHandler);
